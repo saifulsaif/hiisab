@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './pages/Home'
+import "./App.css";
+import Login from "./pages/auth/Login";
 
 function App() {
   return (
     <div className="App">
-     <Home />
+      <Login />
     </div>
   );
 }
