@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Container, Navbar, Nav } from "react-bootstrap";
-const Home = () => {
+const Header = () => {
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -10,8 +9,8 @@ const Home = () => {
             <Nav.Link as={NavLink} to="/">
               Home
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/home">
-              Home
+            <Nav.Link as={NavLink} to="/product">
+              Product
             </Nav.Link>
             <Nav.Link as={NavLink} to="/login">
               Login
@@ -22,4 +21,4 @@ const Home = () => {
     </>
   );
 };
-export default Home;
+export default Header;
