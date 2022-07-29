@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "../component/dashboard/Header";
 import HeaderCard from "../component/dashboard/HeaderCard";
 import Sidebar from "../component/sidebar/Sidebar";
+import "../component/dashboard/Dashboard.css";
 
 const Home = () => (
   <div>
@@ -55,7 +56,7 @@ const Home = () => (
           </div>
           <div class="col-lg-5">
             <div class="card h-100 p-3">
-              <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100">
+              <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100 testing_class">
                 <span class="mask bg-gradient-dark"></span>
                 <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3">
                   <h5 class="text-white font-weight-bolder mb-4 pt-2">
