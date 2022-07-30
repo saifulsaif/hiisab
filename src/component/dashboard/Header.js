@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+console.log(process.env);
+
 const Header = () => {
   return (
     <div>
