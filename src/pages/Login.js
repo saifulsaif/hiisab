@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import axios from "axios";
 
 const Login = () => {
-  const [inputEmail, setInputEmail] = useState(" ");
-  const [inputPassword, setInputPassword] = useState(" ");
+  const [inputEmail, setInputEmail] = useState("");
+  const [inputPassword, setInputPassword] = useState("");
 
   const inputsHandlerEmail = (e) => {
     setInputEmail(e.target.value);
@@ -16,12 +16,8 @@ const Login = () => {
 
   const submitButton = () => {
     let data = { email: inputEmail, password: inputPassword };
-    fetch("url", {
-      method: "post",
-      body: JSON.stringify(data),
-      headers: { "content-Type": "applicaiton/json" },
-    })
-      .then((res) => res.json())
+    axios
+      .post("https://ownlikee.ownmat.com/api/login", data)
       .then((res) => console.log(res));
 
     console.log(inputEmail, inputPassword);
