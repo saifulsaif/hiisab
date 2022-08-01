@@ -1,24 +1,30 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-// const [inputField, setInputField] = useState({
-//   password: "",
-//   email: "",
-// });
 
 const Login = () => {
-  const [inputField, setInputField] = useState({
-    email: "",
-    password: "",
-  });
+  const [inputEmail, setInputEmail] = useState(" ");
+  const [inputPassword, setInputPassword] = useState(" ");
 
-  const inputsHandler = (e) => {
-    setInputField({ [e.target.name]: e.target.value });
-    console.log([e.target.name], e.target.value);
+  const inputsHandlerEmail = (e) => {
+    setInputEmail(e.target.value);
+  };
+
+  const inputsHandlerPassword = (e) => {
+    setInputPassword(e.target.value);
   };
 
   const submitButton = () => {
-    console.log(inputField);
+    let data = { email: inputEmail, password: inputPassword };
+    fetch("url", {
+      method: "post",
+      body: JSON.stringify(data),
+      headers: { "content-Type": "applicaiton/json" },
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res));
+
+    console.log(inputEmail, inputPassword);
   };
 
   return (
@@ -126,8 +132,8 @@ const Login = () => {
                             name="email"
                             aria-label="Email"
                             aria-describedby="email-addon"
-                            onChange={inputsHandler}
-                            value={inputField.email}
+                            onChange={inputsHandlerEmail}
+                            value={inputEmail}
                           />
                         </div>
                         <label>Password</label>
@@ -139,8 +145,8 @@ const Login = () => {
                             placeholder="Password"
                             aria-label="Password"
                             aria-describedby="password-addon"
-                            onChange={inputsHandler}
-                            value={inputField.password}
+                            onChange={inputsHandlerPassword}
+                            value={inputPassword}
                           />
                         </div>
                         <div class="form-check form-switch">
