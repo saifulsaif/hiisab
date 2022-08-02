@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import cookie from "js-cookie";
 
 const Login = () => {
   const [inputEmail, setInputEmail] = useState("");
@@ -16,10 +17,11 @@ const Login = () => {
 
   const submitButton = () => {
     let data = { email: inputEmail, password: inputPassword };
-    axios
-      .post("https://ownlikee.ownmat.com/api/login", data)
-      .then((res) => console.log(res));
-
+    axios.post("https://ownlikee.ownmat.com/api/login", data).then((res) => {
+      cookie.set("token", res.data.token);
+      cookie.set("user", res.data.user);
+    });
+    this.props.history.push("/home");
     console.log(inputEmail, inputPassword);
   };
 
