@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import cookie from "js-cookie";
 
 const Login = () => {
+  const navigate = useNavigate();
+
   const [inputEmail, setInputEmail] = useState("");
   const [inputPassword, setInputPassword] = useState("");
 
@@ -20,8 +22,8 @@ const Login = () => {
     axios.post("https://ownlikee.ownmat.com/api/login", data).then((res) => {
       cookie.set("token", res.data.token);
       cookie.set("user", res.data.user);
+      return navigate("/home");
     });
-    this.props.history.push("/home");
     console.log(inputEmail, inputPassword);
   };
 
