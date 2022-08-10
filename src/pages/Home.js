@@ -86,11 +86,107 @@ const Home = () => (
               <div class="row">
                 <div class="col-xl-8 col-lg-8 col-md-8 d-flex flex-column mx-auto">
                   <div class="card card-plain mt-8">
-                    <div class="card-header pb-0 text-left bg-transparent">
-                      <h3 class="font-weight-bolder text-info text-gradient">
-                        Welcome To Home <Link to="/home"> Dashboard </Link>
-                      </h3>
-                      <p class="mb-0">We weill make awasome application</p>
+                    <div class="card blur shadow-blur max-height-vh-70 overflow-auto overflow-x-hidden mb-5 mb-lg-0">
+                      <div class="card-header p-3">
+                        <h6>Friends</h6>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Search Contact"
+                          aria-label="Email"
+                          onfocus="focused(this)"
+                          onfocusout="defocused(this)"
+                        />
+                      </div>
+                      <div class="card-body p-2">
+                        <a
+                          href="javascript:;"
+                          class="d-block p-2 border-radius-lg bg-gradient-primary"
+                        >
+                          <div class="d-flex p-2">
+                            <img
+                              alt="Image"
+                              src="../../assets/img/team-2.jpg"
+                              class="avatar shadow"
+                            />
+                            <div class="ms-3">
+                              <div class="justify-content-between align-items-center">
+                                <h6 class="text-white mb-0">
+                                  Charlie Watson
+                                  <span class="badge badge-success"></span>
+                                </h6>
+                                <p class="text-white mb-0 text-sm">Typing...</p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="javascript:;" class="d-block p-2">
+                          <div class="d-flex p-2">
+                            <img
+                              alt="Image"
+                              src="../../assets/img/team-1.jpg"
+                              class="avatar shadow"
+                            />
+                            <div class="ms-3">
+                              <h6 class="mb-0">Jane Doe</h6>
+                              <p class="text-muted text-xs mb-2">1 hour ago</p>
+                              <span class="text-muted text-sm col-11 p-0 text-truncate d-block">
+                                Computer users and programmers
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="javascript:;" class="d-block p-2">
+                          <div class="d-flex p-2">
+                            <img
+                              alt="Image"
+                              src="../../assets/img/team-3.jpg"
+                              class="avatar shadow"
+                            />
+                            <div class="ms-3">
+                              <h6 class="mb-0">Mila Skylar</h6>
+                              <p class="text-muted text-xs mb-2">24 min ago</p>
+                              <span class="text-muted text-sm col-11 p-0 text-truncate d-block">
+                                You can subscribe to receive weekly...
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="javascript:;" class="d-block p-2">
+                          <div class="d-flex p-2">
+                            <img
+                              alt="Image"
+                              src="../../assets/img/team-5.jpg"
+                              class="avatar shadow"
+                            />
+                            <div class="ms-3">
+                              <h6 class="mb-0">Sofia Scarlett</h6>
+                              <p class="text-muted text-xs mb-2">7 hours ago</p>
+                              <span class="text-muted text-sm col-11 p-0 text-truncate d-block">
+                                It’s an effective resource regardless..
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="javascript:;" class="d-block p-2">
+                          <div class="d-flex p-2">
+                            <img
+                              alt="Image"
+                              src="../../assets/img/team-4.jpg"
+                              class="avatar shadow"
+                            />
+                            <div class="ms-3">
+                              <div class="justify-content-between align-items-center">
+                                <h6 class="mb-0">Tom Klein</h6>
+                                <p class="text-muted text-xs mb-2">1 day ago</p>
+                              </div>
+                              <span class="text-muted text-sm col-11 p-0 text-truncate d-block">
+                                Be sure to check it out if your dev pro...
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
