@@ -1,5 +1,7 @@
-export default function useAuth() {
-  const auth = true;
+import Cookies from "js-cookie";
 
-  return auth;
+export default function useAuth() {
+  const token = Cookies.get("token");
+
+  return token;
 }

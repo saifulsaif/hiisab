@@ -42,6 +42,11 @@ const Sidebar = () => {
             </li>
             <li class="nav-item">
               <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center"></div>
+              <i
+                class="ni ni-diamond text-gradient text-lg top-0 text-info"
+                aria-hidden="true"
+                id="sidenavCardIcon"
+              ></i>
               <span class="nav-link-text ms-1">
                 <Link to="/property"> Property </Link>
               </span>
@@ -94,28 +99,6 @@ const Sidebar = () => {
           </div>
         </div>
         <div class="sidenav-footer mx-3 ">
-          <div
-            class="card card-background shadow-none card-background-mask-info"
-            id="sidenavCard"
-          >
-            <div class="full-background"></div>
-            <div class="card-body text-start p-3 w-100">
-              <div class="icon icon-shape icon-sm bg-white shadow text-center mb-3 d-flex align-items-center justify-content-center border-radius-md">
-                <i
-                  class="ni ni-diamond text-gradient text-lg top-0 text-info"
-                  aria-hidden="true"
-                  id="sidenavCardIcon"
-                ></i>
-              </div>
-              <div class="docs-info">
-                <h6 class="text-white up mb-0">Need help?</h6>
-                <p class="text-xs font-weight-bold">Please check our docs</p>
-                <div target="_blank" class="btn btn-white btn-sm w-100 mb-0">
-                  Documentation
-                </div>
-              </div>
-            </div>
-          </div>
           <a
             class="btn bg-gradient-primary mt-3 w-100"
             href="https://www.creative-tim.com/product/soft-ui-dashboard-pro?ref=sidebarfree"
