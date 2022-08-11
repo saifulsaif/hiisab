@@ -1,10 +1,12 @@
 import React from "react";
 import Sidebar from "../component/sidebar/Sidebar";
+import Header from "../component/dashboard/Header";
 
 const Expense = () => (
   <div>
     <Sidebar />
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+      <Header />
       <div class="card">
         <div class="table-responsive">
           <table class="table align-items-center mb-0">
@@ -32,13 +34,14 @@ const Expense = () => (
                     <div>
                       <img
                         src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-2.jpg"
-                        class="avatar avatar-sm me-3"
+                        className="avatar avatar-sm me-3"
+                        alt="user"
                       />
                     </div>
                     <div class="d-flex flex-column justify-content-center">
                       <h6 class="mb-0 text-xs">John Michael</h6>
                       <p class="text-xs text-secondary mb-0">
-                        john@creative-tim.com
+                        john@creative-tim.comm
                       </p>
                     </div>
                   </div>
@@ -55,16 +58,7 @@ const Expense = () => (
                     23/04/18
                   </span>
                 </td>
-                <td class="align-middle">
-                  <a
-                    href="javascript:;"
-                    class="text-secondary font-weight-bold text-xs"
-                    data-toggle="tooltip"
-                    data-original-title="Edit user"
-                  >
-                    Edit
-                  </a>
-                </td>
+                <td class="align-middle">Edit</td>
               </tr>
 
               <tr>
@@ -74,6 +68,7 @@ const Expense = () => (
                       <img
                         src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-3.jpg"
                         class="avatar avatar-sm me-3"
+                        alt="user"
                       />
                     </div>
                     <div class="d-flex flex-column justify-content-center">
@@ -115,6 +110,7 @@ const Expense = () => (
                       <img
                         src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-4.jpg"
                         class="avatar avatar-sm me-3"
+                        alt="user"
                       />
                     </div>
                     <div class="d-flex flex-column justify-content-center">
@@ -156,6 +152,7 @@ const Expense = () => (
                       <img
                         src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-3.jpg"
                         class="avatar avatar-sm me-3"
+                        alt="user"
                       />
                     </div>
                     <div class="d-flex flex-column justify-content-center">
@@ -197,6 +194,7 @@ const Expense = () => (
                       <img
                         src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-2.jpg"
                         class="avatar avatar-sm me-3"
+                        alt="user"
                       />
                     </div>
                     <div class="d-flex flex-column justify-content-center">
@@ -238,6 +236,7 @@ const Expense = () => (
                       <img
                         src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-4.jpg"
                         class="avatar avatar-sm me-3"
+                        alt="user"
                       />
                     </div>
                     <div class="d-flex flex-column justify-content-center">
