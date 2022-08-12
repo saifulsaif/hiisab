@@ -32,3 +32,15 @@
 .text-white:hover {
     color: #F19828 !important;
 }
+
+.text-white::before {
+    color: #ddd4d4 !important;
+}
+
+.nav-link:before {
+    color: #ddd4d4 !important;
+}
+
+.navbar-vertical.navbar-expand-xs .navbar-nav .nav-link {
+    margin: 0px 0 0 4px;
+}

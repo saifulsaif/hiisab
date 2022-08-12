@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeadderCard = () => {
+const HeaderCard = () => {
   return (
     <div>
       <div class="row">
@@ -125,4 +125,4 @@ const HeadderCard = () => {
   );
 };
 
-export default HeadderCard;
+export default HeaderCard;
