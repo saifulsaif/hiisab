@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-
+let url = " ";
 console.log(process.env);
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
               <li class="breadcrumb-item text-sm">
-                <a class="opacity-5 text-dark">
+                <a class="opacity-5 text-dark" href={url}>
                   Pages
                 </a>
               </li>
@@ -48,16 +48,12 @@ const Header = () => {
             </div>
             <ul class="navbar-nav  justify-content-end">
               <li class="nav-item d-flex align-items-center">
-                <a
-                  class="btn btn-outline-primary btn-sm mb-0 me-3"
-                >
+                <a class="btn btn-outline-primary btn-sm mb-0 me-3" href={url}>
                   Online Builder
                 </a>
               </li>
               <li class="nav-item d-flex align-items-center">
-                <a
-                  class="nav-link text-body font-weight-bold px-0"
-                >
+                <a class="nav-link text-body font-weight-bold px-0" href={url}>
                   <i class="fa fa-user me-sm-1" aria-hidden="true"></i>
                   <span class="d-sm-inline d-none">Sign In</span>
                 </a>
@@ -65,6 +61,7 @@ const Header = () => {
               <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
                 <a
                   class="nav-link text-body p-0"
+                  href={url}
                   id="iconNavbarSidenav"
                 >
                   <div class="sidenav-toggler-inner">
@@ -75,7 +72,7 @@ const Header = () => {
                 </a>
               </li>
               <li class="nav-item px-3 d-flex align-items-center">
-                <a  class="nav-link text-body p-0">
+                <a class="nav-link text-body p-0" href={url}>
                   <i
                     class="fa fa-cog fixed-plugin-button-nav cursor-pointer"
                     aria-hidden="true"
@@ -84,6 +81,7 @@ const Header = () => {
               </li>
               <li class="nav-item dropdown pe-2 d-flex align-items-center">
                 <a
+                  href={url}
                   class="nav-link text-body p-0"
                   id="dropdownMenuButton"
                   data-bs-toggle="dropdown"
@@ -96,12 +94,11 @@ const Header = () => {
                   aria-labelledby="dropdownMenuButton"
                 >
                   <li class="mb-2">
-                    <a
-                      class="dropdown-item border-radius-md"
-                    >
+                    <a href={url} class="dropdown-item border-radius-md">
                       <div class="d-flex py-1">
                         <div class="my-auto">
                           <img
+                            alt="avator"
                             src="../assets/img/team-2.jpg"
                             class="avatar avatar-sm  me-3 "
                           />
@@ -120,12 +117,11 @@ const Header = () => {
                     </a>
                   </li>
                   <li class="mb-2">
-                    <a
-                      class="dropdown-item border-radius-md"
-                    >
+                    <a href={url} class="dropdown-item border-radius-md">
                       <div class="d-flex py-1">
                         <div class="my-auto">
                           <img
+                            alt="logo"
                             src="../assets/img/small-logos/logo-spotify.svg"
                             class="avatar avatar-sm bg-gradient-dark  me-3 "
                           />
@@ -144,9 +140,7 @@ const Header = () => {
                     </a>
                   </li>
                   <li>
-                    <a
-                      class="dropdown-item border-radius-md"
-                    >
+                    <a href={url} class="dropdown-item border-radius-md">
                       <div class="d-flex py-1">
                         <div class="avatar avatar-sm bg-gradient-secondary  me-3  my-auto">
                           <svg
