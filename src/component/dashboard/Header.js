@@ -1,9 +1,6 @@
 import React from "react";
-import Cookies from "js-cookie";
 // import { Link } from "react-router-dom";
 let url = " ";
-const user = Cookies.get("user");
-console.log(user.name);
 
 const Header = () => {
   return (
@@ -26,7 +23,6 @@ const Header = () => {
                 aria-current="page"
               >
                 Dashboard
-                {user.name}
               </li>
             </ol>
             <h6 class="font-weight-bolder mb-0">Dashboard</h6>

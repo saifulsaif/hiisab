@@ -23282,7 +23282,7 @@ hr.horizontal.gray-light {
   font-weight: 700;
   content: "\f107";
   margin-left: auto;
-  color: rgba(58, 65, 111, 0.5);
+  color: rgb(255 255 255 / 75%);
   transition: all 0.2s ease-in-out;
 }
 
@@ -23293,7 +23293,7 @@ hr.horizontal.gray-light {
 }
 
 .navbar-vertical .navbar-nav .nav-link[data-bs-toggle="collapse"][aria-expanded="true"]:after {
-  color: #3A416F;
+  color: rgb(255 255 255 / 75%);
   transform: rotate(180deg);
 }
 
@@ -23329,7 +23329,7 @@ hr.horizontal.gray-light {
   height: 5px;
   width: 5px;
   border-radius: 1.5rem;
-  background: rgba(58, 65, 111, 0.5);
+  background: rgb(255 255 255 / 75%);
 }
 
 .navbar-vertical .navbar-nav .nav-item .collapse .nav .nav-item .nav-link.active,
