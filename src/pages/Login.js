@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Loader from "../component/partisals/Loader";
 import axios from "axios";
 import cookie from "js-cookie";
 
@@ -8,6 +9,7 @@ const Login = () => {
 
   const [inputEmail, setInputEmail] = useState("");
   const [inputPassword, setInputPassword] = useState("");
+  const [showLoader, setShowLoader] = useState(false);
 
   const inputsHandlerEmail = (e) => {
     setInputEmail(e.target.value);
@@ -20,6 +22,7 @@ const Login = () => {
   let url = "";
 
   const submitButton = () => {
+    setShowLoader(true);
     let data = { email: inputEmail, password: inputPassword };
     axios.post("https://ownlikee.ownmat.com/api/login", data).then((res) => {
       cookie.set("token", res.data.token);
@@ -138,7 +141,11 @@ const Login = () => {
                             onClick={submitButton}
                             class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0"
                           >
-                            Sign in
+                            {showLoader ? (
+                              <Loader title=" Logging" />
+                            ) : (
+                              "Login in"
+                            )}
                           </button>
                         </div>
                       </form>
