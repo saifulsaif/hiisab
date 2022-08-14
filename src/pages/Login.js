@@ -41,7 +41,7 @@ const Login = () => {
                   class="navbar-brand font-weight-bolder ms-lg-0 ms-3 "
                   href="../../../pages/dashboards/default.html"
                 >
-                  Home Cal Master
+                  RocksFox
                 </a>
 
                 <Link
@@ -166,7 +166,7 @@ const Login = () => {
                     <div class="position-relative">
                       <img
                         class="max-width-500 w-100 position-relative z-index-2"
-                        src="https://demos.creative-tim.com/soft-ui-dashboard-pro/assets/img/illustrations/chat.png"
+                        src="../../../assets/img/login/img1.png"
                         alt="chat-img"
                       />
                     </div>

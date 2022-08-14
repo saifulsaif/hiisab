@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Header from "../component/dashboard/Header";
 import HeaderCard from "../component/dashboard/HeaderCard";
 import Sidebar from "../component/sidebar/Sidebar";
@@ -19,7 +19,9 @@ const Home = () => (
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="d-flex flex-column h-100">
-                      <p class="mb-1 pt-2 text-bold">Built by developers</p>
+                      <p class="mb-1 pt-2 text-bold">
+                        Built by developers {process.env.API_URL}
+                      </p>
                       <h5 class="font-weight-bolder">Soft UI Dashboard</h5>
                       <p class="mb-5">
                         From colors, cards, typography to complex elements, you
@@ -80,7 +82,7 @@ const Home = () => (
         </div>
       </div>
       <main class="main-content  mt-0">
-        <section>
+        {/* <section>
           <div class="page-header min-vh-75">
             <div class="container">
               <div class="row">
@@ -100,7 +102,6 @@ const Home = () => (
                       </div>
                       <div class="card-body p-2">
                         <a
-                          href="javascript:;"
                           class="d-block p-2 border-radius-lg bg-gradient-primary"
                         >
                           <div class="d-flex p-2">
@@ -120,11 +121,11 @@ const Home = () => (
                             </div>
                           </div>
                         </a>
-                        <a href="javascript:;" class="d-block p-2">
+                        <a class="d-block p-2">
                           <div class="d-flex p-2">
                             <img
                               alt="Image"
-                              src="../../assets/img/team-1.jpg"
+                              src="https://scriptverse.academy/img/tutorials/reactjs-environment-files.png"
                               class="avatar shadow"
                             />
                             <div class="ms-3">
@@ -136,7 +137,7 @@ const Home = () => (
                             </div>
                           </div>
                         </a>
-                        <a href="javascript:;" class="d-block p-2">
+                        <a  class="d-block p-2">
                           <div class="d-flex p-2">
                             <img
                               alt="Image"
@@ -168,11 +169,11 @@ const Home = () => (
                             </div>
                           </div>
                         </a>
-                        <a href="javascript:;" class="d-block p-2">
+                        <a  class="d-block p-2">
                           <div class="d-flex p-2">
                             <img
-                              alt="Image"
-                              src="../../assets/img/team-4.jpg"
+                              alt="Image-usersfsdfdsfsdfds sfsdf"
+                              src="https://scriptverse.academy/img/tutorials/reactjs-environment-files.png"
                               class="avatar shadow"
                             />
                             <div class="ms-3">
@@ -289,7 +290,7 @@ const Home = () => (
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </main>
   </div>
