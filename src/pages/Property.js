@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Sidebar from "../component/sidebar/Sidebar";
 import Header from "../component/dashboard/Header";
-import "../component/dashboard/Dashboard.css";
+import "../component/property/Property.css";
 
 const Property = () => (
   <div>
@@ -33,9 +34,12 @@ const Property = () => (
                   </p>
                 </div>
                 <div className="col-md-3">
-                  <button className="btn bg-gradient-primary mt-3 w-100">
+                  <Link
+                    className="btn bg-gradient-primary mt-3 w-100"
+                    to="/floor"
+                  >
                     More
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div class="container border-radius-lg">
@@ -289,9 +293,12 @@ const Property = () => (
                   </p>
                 </div>
                 <div className="col-md-3">
-                  <button className="btn bg-gradient-primary mt-3 w-100">
+                  <Link
+                    className="btn bg-gradient-primary mt-3 w-100"
+                    to="/floor"
+                  >
                     More
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div class="container border-radius-lg">

@@ -1,0 +1,19 @@
+.building-cover-first {
+    background-image: url('http://localhost:3000/assets/img/building/img2.jpg');
+}
+
+.building-cover-second {
+    background-image: url('http://localhost:3000/assets/img/building/img4.png');
+}
+
+.building-name {
+    margin-top: 0px;
+}
+
+.building-address {
+    margin-bottom: 0px;
+}
+
+.card {
+    box-shadow: 0 9px 15px 0 rgb(0 0 0 / 35%);
+}
