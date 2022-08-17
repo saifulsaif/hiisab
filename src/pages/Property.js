@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "../component/sidebar/Sidebar";
 import Header from "../component/dashboard/Header";
+import "../component/dashboard/Dashboard.css";
 
 const Property = () => (
   <div>
@@ -11,7 +12,7 @@ const Property = () => (
         <div class="col-lg-6 mb-lg-0 mb-4">
           <div class="card z-index-2">
             <div class="card-body p-3">
-              <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-3">
+              <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-3 building-cover-second">
                 <div class="chart">
                   <canvas
                     id="chart-bars"
@@ -21,11 +22,22 @@ const Property = () => (
                   ></canvas>
                 </div>
               </div>
-              <h6 class="ms-2 mt-4 mb-0"> Active Users </h6>
-              <p class="text-sm ms-2">
-                {" "}
-                (<span class="font-weight-bolder">+23%</span>) than last week{" "}
-              </p>
+              <div className="row">
+                <div className="col-md-9">
+                  <h6 class="ms-2 mt-4 mb-0"> Prince Towr LTD </h6>
+                  <p class="text-sm ms-2">
+                    {" "}
+                    <i class="ni ni-pin-3"></i> (
+                    <span class="font-weight-bolder">Dhanmondi</span>) 32 number
+                    , West Dhanmondi, Dhaka 1212
+                  </p>
+                </div>
+                <div className="col-md-3">
+                  <button className="btn bg-gradient-primary mt-3 w-100">
+                    More
+                  </button>
+                </div>
+              </div>
               <div class="container border-radius-lg">
                 <div class="row">
                   <div class="col-3 py-3 ps-0">
@@ -254,7 +266,7 @@ const Property = () => (
         <div class="col-lg-6 mb-lg-0 mb-4">
           <div class="card z-index-2">
             <div class="card-body p-3">
-              <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-3">
+              <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-3 building-cover-first">
                 <div class="chart">
                   <canvas
                     id="chart-bars"
@@ -264,11 +276,24 @@ const Property = () => (
                   ></canvas>
                 </div>
               </div>
-              <h6 class="ms-2 mt-4 mb-0"> Active Users </h6>
-              <p class="text-sm ms-2">
-                {" "}
-                (<span class="font-weight-bolder">+23%</span>) than last week{" "}
-              </p>
+              <div className="row">
+                <div className="col-md-9">
+                  <h6 class="ms-2 mt-4 mb-0 building-name"> Police Plaza </h6>
+                  <p class="text-sm ms-2">
+                    {" "}
+                    <i class="ni ni-pin-3"></i>(
+                    <span class="font-weight-bolder building-address">
+                      Gulshan 1
+                    </span>
+                    ) Road N0 12, Block- C, Sector A Gulshan 1 , Dhaka 1214
+                  </p>
+                </div>
+                <div className="col-md-3">
+                  <button className="btn bg-gradient-primary mt-3 w-100">
+                    More
+                  </button>
+                </div>
+              </div>
               <div class="container border-radius-lg">
                 <div class="row">
                   <div class="col-3 py-3 ps-0">
