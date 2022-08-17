@@ -16,4 +16,11 @@
 
 .card {
     box-shadow: 0 9px 15px 0 rgb(0 0 0 / 35%);
+    margin: 10px 0 10px 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }

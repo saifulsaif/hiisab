@@ -12,10 +12,14 @@ const Header = () => {
     const config = {
       headers: { Authorization: token },
     };
+
+
     axios.get("https://ownlikee.ownmat.com/api/user", config).then((res) => {
       console.log(res);
       setProfile(res.data.user);
     });
+
+    
   }, []);
 
   return (
