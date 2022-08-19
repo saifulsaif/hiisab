@@ -46,3 +46,16 @@ ul {
     font-size: xx-large;
     font-family: sans-serif;
 }
+
+.badge {
+    height: 20px;
+    width: 20px;
+}
+
+.bg-gradient-floor {
+    background-image: linear-gradient(270deg, #ffffff 4%, #484c7f 100%);
+}
+
+.add-floor-card {
+    padding: 17px 20px 0px 15px !important;
+}
