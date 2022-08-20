@@ -38,7 +38,7 @@ const Property = () => (
                     className="btn bg-gradient-primary mt-3 w-100"
                     to="/floor"
                   >
-                    More
+                    Manage
                   </Link>
                 </div>
               </div>
@@ -297,7 +297,7 @@ const Property = () => (
                     className="btn bg-gradient-primary mt-3 w-100"
                     to="/floor"
                   >
-                    More
+                    Manage
                   </Link>
                 </div>
               </div>

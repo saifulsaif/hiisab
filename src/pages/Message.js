@@ -1,24 +1,24 @@
 import React from "react";
 import Sidebar from "../component/sidebar/Sidebar";
 import Header from "../component/dashboard/Header";
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 
 const Message = () => {
-  const showSwal = () => {
-    Swal.fire({
-      title: "Are you sure?",
-      text: "You won't be able to revert this!",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, delete it!",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        Swal.fire("Deleted!", "Your file has been deleted.", "success");
-      }
-    });
-  };
+  // const showSwal = () => {
+  //   Swal.fire({
+  //     title: "Are you sure?",
+  //     text: "You won't be able to revert this!",
+  //     icon: "warning",
+  //     showCancelButton: true,
+  //     confirmButtonColor: "#3085d6",
+  //     cancelButtonColor: "#d33",
+  //     confirmButtonText: "Yes, delete it!",
+  //   }).then((result) => {
+  //     if (result.isConfirmed) {
+  //       Swal.fire("Deleted!", "Your file has been deleted.", "success");
+  //     }
+  //   });
+  // };
 
   return (
     <div>
@@ -29,10 +29,6 @@ const Message = () => {
           {" "}
           hi {process.env.API_URL} {process.env.API_URL}{" "}
         </h1>
-
-        <button class="btn bg-gradient-primary" onClick={showSwal}>
-          Take the shot!
-        </button>
 
         <button
           type="button"

@@ -59,3 +59,14 @@ ul {
 .add-floor-card {
     padding: 17px 20px 0px 15px !important;
 }
+
+.add-renter {
+    cursor: pointer;
+}
+
+.check-icon {
+    background-color: #4caf50;
+    color: white;
+    padding: 2px;
+    border-radius: 22%;
+}

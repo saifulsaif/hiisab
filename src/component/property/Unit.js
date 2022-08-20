@@ -35,27 +35,27 @@ const Unit = (props) => {
                   <tr>
                     <td>
                       <div class="d-flex px-2 py-0">
-                        <span class="badge bg-gradient-primary me-3"> </span>
+                        <span class="bg-gradient-primary me-3"> </span>
                         <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">Living Room</h6>
+                          <h6 class="mb-0 text-sm">Unit Name : </h6>
                         </div>
                       </div>
                     </td>
                     <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold"> 15% </span>
+                      <span class="text-xs font-weight-bold"> 1A </span>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div class="d-flex px-2 py-0">
-                        <span class="badge bg-gradient-secondary me-3"> </span>
+                        <span class="bg-gradient-secondary me-3"> </span>
                         <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">Kitchen</h6>
+                          <h6 class="mb-0 text-sm">Joined</h6>
                         </div>
                       </div>
                     </td>
                     <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold"> 20% </span>
+                      <span class="text-xs font-weight-bold"> 01-10-2022</span>
                     </td>
                   </tr>
                   <tr>
@@ -63,12 +63,12 @@ const Unit = (props) => {
                       <div class="d-flex px-2 py-0">
                         <span class="badge bg-gradient-info me-3"> </span>
                         <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">Attic</h6>
+                          <h6 class="mb-0 text-sm">Rant</h6>
                         </div>
                       </div>
                     </td>
                     <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold"> 13% </span>
+                      <span class="text-xs font-weight-bold"> 15,00.00 </span>
                     </td>
                   </tr>
                   <tr>
@@ -76,12 +76,12 @@ const Unit = (props) => {
                       <div class="d-flex px-2 py-0">
                         <span class="badge bg-gradient-success me-3"> </span>
                         <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">Garage</h6>
+                          <h6 class="mb-0 text-sm">Advance</h6>
                         </div>
                       </div>
                     </td>
                     <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold"> 32% </span>
+                      <span class="text-xs font-weight-bold"> 30,000.00</span>
                     </td>
                   </tr>
                   <tr>
@@ -89,12 +89,15 @@ const Unit = (props) => {
                       <div class="d-flex px-2 py-0">
                         <span class="badge bg-gradient-warning me-3"> </span>
                         <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">Basement</h6>
+                          <h6 class="mb-0 text-sm">Documents</h6>
                         </div>
                       </div>
                     </td>
                     <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold"> 20% </span>
+                      <span class="text-xs font-weight-bold">
+                        {" "}
+                        <i class="ni ni-check-bold check-icon"></i>{" "}
+                      </span>
                     </td>
                   </tr>
                 </tbody>

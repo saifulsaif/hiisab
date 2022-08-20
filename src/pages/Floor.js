@@ -141,7 +141,11 @@ const Floor = () => {
                         </div>
                       </div>
                       <div class="col-4 text-end">
-                        <button className="btn bg-gradient-primary w-100">
+                        <button
+                          className="btn bg-gradient-success"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
                           Add
                         </button>
                       </div>
@@ -185,13 +189,13 @@ const Floor = () => {
                       <div class="col-7">
                         <div class="card h-100">
                           <div class="card-body d-flex flex-column justify-content-center text-center">
-                            <a href={""}>
+                            <button className="btn add-renter">
                               <i
                                 class="fa fa-plus text-secondary mb-3"
                                 aria-hidden="true"
                               ></i>
                               <h5 class="text-secondary"> New Renter </h5>
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -202,6 +206,63 @@ const Floor = () => {
             </div>
           </div>
         </div>
+
+        {/* Modal */}
+
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Add Level / Floor
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close text-dark"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Lavel name or number"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn bg-gradient-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn bg-gradient-success">
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* endmodal */}
       </main>
     </div>
   );
