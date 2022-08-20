@@ -45,9 +45,11 @@ const Floor = () => {
       profile:
         "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       info: {
+        unit_name: "A1",
         advance: 20000,
         rent: 1400,
         document: true,
+        join: "01-10-2022",
         verified: true,
       },
     },
@@ -56,9 +58,11 @@ const Floor = () => {
       profile:
         "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       info: {
+        unit_name: "A2",
         advance: 30000,
         rent: 1600,
         document: false,
+        join: "02-10-2022",
         verified: true,
       },
     },
@@ -67,9 +71,11 @@ const Floor = () => {
       profile:
         "https://images.pexels.com/photos/38289/portrait-photography-profile-face-one-38289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       info: {
+        unit_name: "A3",
         advance: 40000,
         rent: 2600,
         document: true,
+        join: "03-10-2022",
         verified: true,
       },
     },
@@ -78,8 +84,10 @@ const Floor = () => {
       profile:
         "https://images.pexels.com/photos/10016478/pexels-photo-10016478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       info: {
+        unit_name: "A4",
         advance: 40000,
         rent: 2600,
+        join: "015-10-2022",
         document: true,
         verified: true,
       },
@@ -89,9 +97,11 @@ const Floor = () => {
       profile:
         "https://images.pexels.com/photos/10016478/pexels-photo-10016478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       info: {
+        unit_name: "A5",
         advance: 40000,
         rent: 2600,
         document: true,
+        join: "05-10-2022",
         verified: true,
       },
     },
@@ -100,8 +110,10 @@ const Floor = () => {
       profile:
         "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       info: {
+        unit_name: "A6",
         advance: 80000,
         rent: 7600,
+        join: "09-10-2022",
         document: false,
         verified: true,
       },

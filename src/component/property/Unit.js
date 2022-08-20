@@ -1,6 +1,7 @@
 import React from "react";
 
 const Unit = (props) => {
+  console.log(props);
   return (
     <div class="card">
       <div class="card-header pb-0 p-3">
@@ -42,7 +43,9 @@ const Unit = (props) => {
                       </div>
                     </td>
                     <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold"> 1A </span>
+                      <span class="text-xs font-weight-bold">
+                        {props.units.info.unit_name}
+                      </span>
                     </td>
                   </tr>
                   <tr>
@@ -55,39 +58,46 @@ const Unit = (props) => {
                       </div>
                     </td>
                     <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold"> 01-10-2022</span>
+                      <span class="text-xs font-weight-bold">
+                        {" "}
+                        {props.units.info.join}
+                      </span>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div class="d-flex px-2 py-0">
-                        <span class="badge bg-gradient-info me-3"> </span>
+                        <span class="bg-gradient-info me-3"> </span>
                         <div class="d-flex flex-column justify-content-center">
                           <h6 class="mb-0 text-sm">Rant</h6>
                         </div>
                       </div>
                     </td>
                     <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold"> 15,00.00 </span>
+                      <span class="text-xs font-weight-bold">
+                        {props.units.info.rent}{" "}
+                      </span>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div class="d-flex px-2 py-0">
-                        <span class="badge bg-gradient-success me-3"> </span>
+                        <span class="bg-gradient-success me-3"> </span>
                         <div class="d-flex flex-column justify-content-center">
                           <h6 class="mb-0 text-sm">Advance</h6>
                         </div>
                       </div>
                     </td>
                     <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold"> 30,000.00</span>
+                      <span class="text-xs font-weight-bold">
+                        {props.units.info.advance}
+                      </span>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div class="d-flex px-2 py-0">
-                        <span class="badge bg-gradient-warning me-3"> </span>
+                        <span class="bg-gradient-warning me-3"> </span>
                         <div class="d-flex flex-column justify-content-center">
                           <h6 class="mb-0 text-sm">Documents</h6>
                         </div>
@@ -95,7 +105,7 @@ const Unit = (props) => {
                     </td>
                     <td class="align-middle text-center text-sm">
                       <span class="text-xs font-weight-bold">
-                        {" "}
+                        {props.units.info.document}
                         <i class="ni ni-check-bold check-icon"></i>{" "}
                       </span>
                     </td>
