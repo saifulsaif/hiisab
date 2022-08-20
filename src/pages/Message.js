@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "../component/sidebar/Sidebar";
 import Header from "../component/dashboard/Header";
-import ChatList from "../component/auth/ChatList";
+import ChatList from "../component/chat/ChatList";
 // import Swal from "sweetalert2";
 
 const Message = () => {
@@ -35,7 +35,7 @@ const Message = () => {
       name: "Rock Malik ",
       avatar:
         "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      last_seen: " 1 hour ago",
+      last_seen: " 10 min ago",
       last_message: "Computer users and programmers 3",
       last_message_seen: true,
       active: true,
@@ -44,7 +44,7 @@ const Message = () => {
       name: "Rockcy Malik",
       avatar:
         "https://images.pexels.com/photos/38289/portrait-photography-profile-face-one-38289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      last_seen: " 1 hour ago",
+      last_seen: " 4 hour ago",
       last_message: "Computer users and programmers 4",
       last_message_seen: true,
       active: true,
@@ -53,7 +53,7 @@ const Message = () => {
       name: "Jhon Malik",
       avatar:
         "https://images.pexels.com/photos/10016478/pexels-photo-10016478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      last_seen: " 1 hour ago",
+      last_seen: " 2 hour ago",
       last_message: "Computer users and programmers 5",
       last_message_seen: true,
       active: true,
@@ -62,7 +62,7 @@ const Message = () => {
       name: "Jhon Malik",
       avatar:
         "https://images.pexels.com/photos/10016478/pexels-photo-10016478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      last_seen: " 1 hour ago",
+      last_seen: " 12 hour ago",
       last_message: "Computer users and programmers 7",
       last_message_seen: true,
       active: true,
