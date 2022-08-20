@@ -70,3 +70,8 @@ ul {
     padding: 2px;
     border-radius: 22%;
 }
+
+.icon-xs i {
+    top: 2px;
+    font-size: .5rem;
+}

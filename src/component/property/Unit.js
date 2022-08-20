@@ -2,6 +2,23 @@ import React from "react";
 
 const Unit = (props) => {
   console.log(props);
+
+  const DocumentIcon = (icon) => {
+    if (icon.doc) {
+      return (
+        <div class="icon icon-shape icon-xs rounded-circle bg-gradient-success shadow text-center">
+          <i class="fas fa-check opacity-10" aria-hidden="true"></i>
+        </div>
+      );
+    } else {
+      return (
+        <div class="icon icon-shape icon-xs rounded-circle bg-gradient-secondary shadow text-center">
+          <i class="fas fa-minus" aria-hidden="true"></i>
+        </div>
+      );
+    }
+  };
+
   return (
     <div class="card">
       <div class="card-header pb-0 p-3">
@@ -105,8 +122,7 @@ const Unit = (props) => {
                     </td>
                     <td class="align-middle text-center text-sm">
                       <span class="text-xs font-weight-bold">
-                        {props.units.info.document}
-                        <i class="ni ni-check-bold check-icon"></i>{" "}
+                        <DocumentIcon doc={props.units.info.document} />
                       </span>
                     </td>
                   </tr>
