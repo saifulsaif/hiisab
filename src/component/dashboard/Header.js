@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import cookie from "js-cookie";
 let url = " ";
+const api_url = process.env.REACT_APP_API_URL;
 
 const Header = () => {
   const [profile, setProfile] = useState("");
@@ -13,13 +14,10 @@ const Header = () => {
       headers: { Authorization: token },
     };
 
-
-    axios.get("https://ownlikee.ownmat.com/api/user", config).then((res) => {
+    axios.get(api_url + "/user", config).then((res) => {
       console.log(res);
       setProfile(res.data.user);
     });
-
-    
   }, []);
 
   return (
@@ -41,7 +39,7 @@ const Header = () => {
                 className="breadcrumb-item text-sm text-dark active"
                 aria-current="page"
               >
-                Dashboard
+                Dashboard / {api_url}
               </li>
             </ol>
             <h6 className="font-weight-bolder mb-0">Dashboard</h6>
